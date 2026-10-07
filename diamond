@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+
+    int row=1;
+    
+    while(row <= 3){
+        int space = 1;
+    while(space <= 3 -row){
+        printf(" ");
+        space++;
+    }
+        int star = 1;
+    while(star <= 2*row-1){
+        printf("*");
+        star++;
+    }
+        printf("\n");
+        row++;
+    }
+    int row2 = 2;
+        while(row2 >=1){
+            int space = 1;
+            while(space <= 3-row2){
+                printf(" ");
+                space++;
+            }
+            int star =1; 
+            while(star <= 2*row2-1){
+                printf("*");
+                star++;
+            }
+                
+            printf("\n");
+            row2--;
+        }
+    return 0;
+}
