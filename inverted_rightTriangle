@@ -1,15 +1,16 @@
 #include <stdio.h>
-int main(){
-    
- 
-  for(int i=1, hello=5; i<=5; i++, hello--){
-      for(int j=hello;j>=1;j--){
-          printf("*");
-      }
-      printf("\n");
-  }
 
-    
-
+int main() {
+    int i=1, j, h=5;
+    while(i<=5){
+        j=h;
+    while(j>=1){
+        printf("*");
+        j--;
+    }
+        printf("\n");
+        i++;
+        h--;
+    }
     return 0;
 }
